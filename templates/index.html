@@ -11,6 +11,7 @@
         <h1 class="mt-5 text-center">Welcome to TaskFlow</h1>
         <p class="text-center">A simple app to manage your tasks.</p>
 
+        {% block content %}
         <!-- Task Form -->
          <form method="POST" action="/add-task" class="mt-4">
             <div class="mb-3">
@@ -56,6 +57,7 @@
                 </tbody>
             </table>
         </div>
+        {% endblock %}
     </div>
 </body>
 </html>
