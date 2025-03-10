@@ -6,9 +6,6 @@ from models import db, Task, User  # Ensure db is imported before using it
 from auth import auth as auth_blueprint
 import logging
 
-logging.basicConfig()
-logging.getLogger('sqlalchemy.engine').setLevel(logging.INFO)
-
 def create_app():
     app = Flask(__name__)
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///tasks.db'
