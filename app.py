@@ -42,7 +42,7 @@ def create_app():
         name = request.form['name']
         description = request.form['description']
         duedate = request.form['duedate']
-        print(f"Due Date Received: {duedate}")  # Debugging
+        print(f"Due Date Received: {duedate}")  
 
         duedate = datetime.strptime(duedate, '%Y-%m-%dT%H:%M') if duedate else None
         print(duedate)
